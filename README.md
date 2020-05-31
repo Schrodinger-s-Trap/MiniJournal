@@ -1,5 +1,7 @@
 MiniJournal is a project for the Software Engineer Experimental Course of AHU.
 
+
+
 ## Requirements
 
 - Python >= 3.7.x
@@ -16,6 +18,8 @@ When the new requirement was added to the project, make sure to regenerate the `
 ```bash
 pip freeze > requirements.txt
 ```
+
+
 
 ## Setting Environment
 
@@ -60,3 +64,15 @@ Install all of the requirements through `requirements.txt`:
 pip install -r requirements.txt
 ```
 
+
+
+## Running Project
+
+Run the Django development server of the project in the local browser:
+
+```
+cd minijournal
+python manage.py runserver
+```
+
+Then you can visit the project website in `http://127.0.0.1:8000`.
