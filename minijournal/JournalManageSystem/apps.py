@@ -1,5 +1,5 @@
 from django.apps import AppConfig
 
 
-class JournalmanagesystemConfig(AppConfig):
+class JournalManageSystemConfig(AppConfig):
     name = 'JournalManageSystem'
