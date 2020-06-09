@@ -24,13 +24,13 @@ class Catalog(models.Model):
 
 # 期刊登记表
 class Register(models.Model):
-    journal_title = models.CharField(max_length=50)
+    journal_name = models.CharField(max_length=50)
     journal_info = json_field.JSONField()
 
 
 # 期刊内容表
 class Content(models.Model):
-    journal_title = models.CharField(max_length=50)
+    journal_name = models.CharField(max_length=50)
     journal_info = json_field.JSONField()
     paper_title = models.CharField(max_length=70)
     paper_info = json_field.JSONField()
@@ -39,7 +39,7 @@ class Content(models.Model):
 # 期刊借阅表
 class Borrow(models.Model):
     user_id = models.BigIntegerField()
-    journal_title = models.CharField(max_length=50)
+    journal_name = models.CharField(max_length=50)
     journal_info = json_field.JSONField()
     borrow_time = models.DateTimeField('借阅日期', auto_now_add=True)
     return_time = models.DateTimeField('归还日期', auto_now_add=True)
