@@ -41,8 +41,9 @@ class Borrow(models.Model):
     user_id = models.BigIntegerField()
     journal_name = models.CharField(max_length=50)
     journal_info = json_field.JSONField()
+    has_returned = models.BooleanField(default=False)
     borrow_time = models.DateTimeField('借阅日期', auto_now_add=True)
-    return_time = models.DateTimeField('归还日期', auto_now_add=True)
+    return_time = models.DateTimeField('归还日期',)
 
 
 # 用户信息表
