@@ -1,5 +1,5 @@
 from django.test import TestCase
-from .utils import *
+from journal_manage_system.utils import *
 
 
 class ModelTest(TestCase):

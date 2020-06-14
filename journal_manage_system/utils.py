@@ -1,6 +1,6 @@
 from django.core import serializers
 
-from . import models
+from journal_manage_system import models
 import logging
 
 logger = logging.getLogger(__name__)

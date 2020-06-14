@@ -1,6 +1,6 @@
 from django.urls import path
 
-from . import views
+from journal_manage_system import views
 
 urlpatterns = [
     path('add_catalog', views.add_catalogs),

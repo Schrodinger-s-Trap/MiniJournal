@@ -7,7 +7,7 @@ from django.shortcuts import render
 # Create your views here.
 from django.views.decorators.http import require_http_methods
 
-from . import models
+from journal_manage_system import models
 
 
 @require_http_methods(['GET'])
